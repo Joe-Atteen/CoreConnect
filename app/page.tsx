@@ -3,15 +3,20 @@
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faLocation,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <div className="">
-        <section id="/" className="!bg-[#87511c] hero overflow-hidden relative">
-          <div className="absolute inset-0 bg-[#ffffff] opacity-90 z-0"></div>
+        <section id="/" className="!bg-[#ffffff] hero overflow-hidden relative">
+          <div className="absolute inset-0 bg-[#ffffff] opacity-95 z-0"></div>
           <div className="min-h-dvh flex-center px-6 sm:px-14 pt-[130px] xl:pt-[80px] pb-12 xl:pb-8 relative">
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8">
               <div className="flex justify-center items-center">
@@ -23,7 +28,14 @@ export default function Home() {
                     <span className="primary-text-gradient">success</span>
                   </h1>
                   <p className="sm:text-lg uppercase text-center xl:text-start text-[#404040]">
-                    Over a decade of experience at your disposal
+                    <span className="primary-text-gradient font-semibold">
+                      Connecting
+                    </span>{" "}
+                    people and businesses through{" "}
+                    <span className="primary-text-gradient font-semibold">
+                      core solutions
+                    </span>{" "}
+                    in technology and travel.
                   </p>
                 </div>
               </div>
@@ -39,8 +51,8 @@ export default function Home() {
           </div>
           <div className="bg-[#fdfaf7] relative border-t border-b border-[#e3e3e3]">
             <div className="max-w-[1400px] mx-auto p-6 sm:p-12">
-              <h3 className="text-[24px] md:text-[30px] font-bold mb-10 text-center">
-                We&apos;ve worked with
+              <h3 className="text-[24px] md:text-[30px] font-bold mb-10 text-center uppercase">
+                Our partners
               </h3>
               <div className="flex flex-wrap gap-8 items-center justify-center">
                 <div className="flex justify-center items-center">
@@ -83,12 +95,27 @@ export default function Home() {
         <section id="about" className="">
           <div className="max-w-[1400px] mx-auto px-6 py-28 sm:px-12">
             <h2 className="sub-heading mb-8 tracking-[2px]">About us</h2>
-            <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold mb-20">
+            <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold mb-12">
               Great Team.{" "}
               <span className="text-[#eb0f53]">Awesome Results.</span>
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 py-16 rounded-2xl bg-[#f3e8ee] h-full">
+            <h4 className="text-[18px] text-[#404040] font-medium mb-20">
+              We are a multifaceted consultancy dedicated to providing
+              innovative solutions in IT and travel.
+              <br />
+              <br /> As an IT consultancy, we deliver comprehensive software
+              solutions tailored to the needs of individuals and businesses in
+              Ghana. Our expertise spans system development, IT support, and
+              digital transformation strategies designed to optimize operations
+              and drive growth. <br />
+              <br /> In addition, our Travel and Tour consultancy specializes in
+              curating memorable travel experiences. From personalized itinerary
+              planning to seamless ticketing and destination management, we
+              cater to both local and international clients, ensuring
+              stress-free and enjoyable journeys.
+            </h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 pt-[97px] py-16 rounded-2xl bg-[#f3e8ee] h-full">
                 <Image
                   src="/innovation.svg"
                   width={110}
@@ -100,8 +127,9 @@ export default function Home() {
                   Innovation
                 </h4>
                 <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  eget turpis at nunce. Donec sit amet nunc nec nunc
+                  Embracing cutting-edge technology and creative problem-solving
+                  to deliver tailored IT solutions and personalized travel
+                  experiences.
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 py-16 rounded-2xl bg-[#fbf7ff] h-full">
@@ -116,11 +144,11 @@ export default function Home() {
                   Quality
                 </h4>
                 <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  eget turpis at nunce. Donec sit amet nunc nec nunc
+                  Delivering exceptional services with high standards and a
+                  commitment to continuous improvement.
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 pt-28 pb-16 rounded-2xl bg-[#fff7f1] h-full">
+              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 pt-[97px] pb-16 rounded-2xl bg-[#fff7f1] h-full">
                 <Image
                   src="/satisfaction.svg"
                   width={125}
@@ -132,11 +160,17 @@ export default function Home() {
                   Customer Satifaction
                 </h4>
                 <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  eget turpis at nunce. Donec sit amet nunc nec nunc
+                  Prioritizing customers with seamless experiences and trusted
+                  relationships.
                 </p>
               </div>
             </div>
+            <h4 className="text-[18px] text-[#404040] font-medium">
+              <span className="font-bold">CoreConnect’s Promise</span>: By
+              combining innovation, delivering quality, and prioritizing
+              customer satisfaction, we aim to be your go-to partner for
+              seamlessly connecting your tech and travel needs
+            </h4>
           </div>
         </section>
 
@@ -230,44 +264,63 @@ export default function Home() {
         </section>
 
         <section id="contact" className="">
-          <div className="max-w-[1400px] mx-auto px-6 py-28 sm:px-12">
-            <h2 className="sub-heading mb-8 tracking-[2px]">Contact</h2>
-            <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold mb-20">
-              Let&apos;s talk <span className="text-[#8135b0]">Business</span>
-            </h3>
-            <div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:gap-14">
-                <div className="h-full flex flex-col gap-5 border border-[#e9e9e9] p-4 sm:p-6 md:p-8 lg:p-12 lg:py-16 rounded-2xl bg-[#fffeff]">
-                  <div className="flex items-center p-5 rounded-2xl border border-[#e9e9e9] gap-3">
-                    <FontAwesomeIcon icon={faPhone} className="fa-fw text-xl" />
-                    <p className="text-xl">0209119731</p>
+          <div className="relative mb-[300px]">
+            <div className="relative !bg-[#ffffff] contact-bg overflow-hidden ">
+              <div className="absolute inset-0 bg-[#f5f2f7] opacity-90 z-0"></div>
+              <div className="relative max-w-[1400px] mx-auto px-6 py-28 pb-72 sm:pb-80 sm:px-12">
+                <h2 className="sub-heading mb-8 tracking-[2px]">Contact</h2>
+                <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold">
+                  Let&apos;s talk{" "}
+                  <span className="text-[#8135b0]">Business</span>
+                </h3>
+              </div>
+            </div>
+            <div className="max-w-[1400px] mx-auto px-6 sm:px-12 absolute top-[250px] sm:top-[300px] left-[50%] transform-gpu -translate-x-1/2 z-10 w-full">
+              <div className="h-full w-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
+                  <div className="flex items-center">
+                    <div className="col-span-1 p-4 py-8 sm:p-6 md:p-8 lg:p-12 lg:py-16">
+                      <h4 className="font-semibold text-[20px] md:text-[24px] text-[#404040]">
+                        You can reach via any of the channels listed
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex items-center p-5 rounded-2xl border border-[#e9e9e9] gap-3">
-                    <FontAwesomeIcon icon={faPhone} className="fa-fw text-xl" />
-                    <p className="text-xl">0209119731</p>
-                  </div>
-                  <div className="flex items-center p-5 rounded-2xl border border-[#e9e9e9] gap-3">
-                    <FontAwesomeIcon icon={faPhone} className="fa-fw text-xl" />
-                    <p className="text-xl">0209119731</p>
-                  </div>
-                </div>
-                <div className="md:flex justify-center items-center h-full">
-                  <div>
-                    <h4 className="text-[30px] text-[#404040 text-start font-bold mb-6 md:mb-8">
-                      Old School?
-                    </h4>
-                    <div className="flex flex-col gap-5">
-                      <p className="text-xl font-semibold">
-                        If you prefer plain ol&apos; email, write to us directly
-                        at:
+                  <div className="col-span-2 flex flex-col gap-5 primary-gradient text-white p-4 sm:p-6 md:p-8 lg:p-12 lg:py-16">
+                    <a href="tel:0275918290">
+                      <div className="flex items-center py-5 sm:p-5 gap-3">
+                        <FontAwesomeIcon
+                          icon={faPhone}
+                          className="fa-fw sm:text-xl"
+                        />
+                        <p className="sm:text-xl">0275918290</p>
+                      </div>
+                    </a>
+                    <a href="https://wa.me/233275918290">
+                      <div className="flex items-center py-5 sm:p-5 gap-3">
+                        <FontAwesomeIcon
+                          icon={faWhatsapp}
+                          className="fa-fw sm:text-xl"
+                        />
+                        <p className="sm:text-xl">0275918290</p>
+                      </div>
+                    </a>
+                    <a href="mailto:coreconnectghana@gmail.com">
+                      <div className="flex items-center py-5 sm:p-5 gap-3">
+                        <FontAwesomeIcon
+                          icon={faEnvelope}
+                          className="fa-fw sm:text-xl"
+                        />
+                        <p className="sm:text-xl">coreconnectghana@gmail.com</p>
+                      </div>
+                    </a>
+                    <div className="flex items-center py-5 sm:p-5 gap-3">
+                      <FontAwesomeIcon
+                        icon={faLocation}
+                        className="fa-fw sm:text-xl"
+                      />
+                      <p className="sm:text-xl tracking-[2px] font-medium">
+                        McCarthy Hill, 13th Avenue{" "}
                       </p>
-                      <a
-                        href=""
-                        mail-to=""
-                        className="text-[#eb0f53] underline"
-                      >
-                        coreconnect@whatever.com
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -275,7 +328,9 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[1400px] mx-auto border-t border-[#e9e9e9] p-6 md:p-12">
-            <p className="text-center">©2025 CoreConnect. All rights reserved</p>
+            <p className="text-center uppercase font-light">
+              ©2025 CoreConnect. All rights reserved
+            </p>
           </div>
         </section>
       </div>

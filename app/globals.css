@@ -216,7 +216,7 @@ body {
   }
 
   .primary-gradient {
-    background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+    background: linear-gradient(129deg, #eb0f53 0%, #d28740 50%, #9251f5 100%);
   }
 
   .dark-gradient {
@@ -400,16 +400,24 @@ body {
 }
 
 a {
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .active {
   color: #eb0f53;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .hero {
   background: url(/pattern.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-bg {
+  background: url(/map-bg.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
