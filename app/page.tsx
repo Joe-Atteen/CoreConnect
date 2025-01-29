@@ -266,26 +266,18 @@ export default function Home() {
         <section id="contact" className="">
           <div className="relative mb-[300px]">
             <div className="relative !bg-[#ffffff] contact-bg overflow-hidden ">
-              <div className="absolute inset-0 bg-[#f5f2f7] opacity-90 z-0"></div>
+              <div className="absolute inset-0 bg-[#000000] opacity-65 z-0"></div>
               <div className="relative max-w-[1400px] mx-auto px-6 py-28 pb-72 sm:pb-80 sm:px-12">
-                <h2 className="sub-heading mb-8 tracking-[2px]">Contact</h2>
-                <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold">
+                <h2 className="sub-heading mb-8 tracking-[2px] !text-white">Contact</h2>
+                <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold text-white">
                   Let&apos;s talk{" "}
-                  <span className="text-[#8135b0]">Business</span>
+                  <span className="text-[#fff]">Business</span>
                 </h3>
               </div>
             </div>
-            <div className="max-w-[1400px] mx-auto px-6 sm:px-12 absolute top-[250px] sm:top-[300px] left-[50%] transform-gpu -translate-x-1/2 z-10 w-full">
-              <div className="h-full w-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
-                <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
-                  <div className="flex items-center">
-                    <div className="col-span-1 p-4 py-8 sm:p-6 md:p-8 lg:p-12 lg:py-16">
-                      <h4 className="font-semibold text-[20px] md:text-[24px] text-[#404040]">
-                        You can reach via any of the channels listed
-                      </h4>
-                    </div>
-                  </div>
-                  <div className="col-span-2 flex flex-col gap-5 primary-gradient text-white p-4 sm:p-6 md:p-8 lg:p-12 lg:py-16">
+            <div className="max-w-[1400px] mx-auto px-6 sm:px-12 absolute top-[250px] sm:top-[300px] left-[50%] transform-gpu -translate-x-1/2 z-10">
+              <div className="h-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
+                  <div className="flex flex-col gap-5 p-4 sm:p-6 md:p-8 lg:p-12 lg:py-16">
                     <a href="tel:0275918290">
                       <div className="flex items-center py-5 sm:p-5 gap-3">
                         <FontAwesomeIcon
@@ -323,7 +315,6 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>

@@ -406,7 +406,10 @@ a {
 
 .active {
   color: #eb0f53;
-  letter-spacing: 2px;
+}
+
+a:hover {
+  color: #eb0f53;
 }
 
 .hero {
