@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <div className="">
         <section id="/" className="!bg-[#efefef] hero overflow-hidden relative">
-            <div className="absolute inset-0 bg-[#ffffff] opacity-90 z-0"></div>
+          <div className="absolute inset-0 bg-[#ffffff] opacity-90 z-0"></div>
           <div className="min-h-dvh flex-center px-6 sm:px-14 pt-[130px] xl:pt-[80px] pb-12 xl:pb-8 relative">
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8">
               <div className="flex justify-center items-center">
@@ -178,7 +178,7 @@ export default function Home() {
           <div className="max-w-[1400px] mx-auto px-6 py-28 sm:px-12">
             <h2 className="sub-heading mb-8 tracking-[2px]">Services</h2>
             <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold mb-20">
-              Right on time. <span className="text-[#d28740]">Everytime.</span>
+              Right on time. <span className="text-[#8a39c0]">Everytime.</span>
             </h3>
             <div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-14">
@@ -272,7 +272,8 @@ export default function Home() {
                   Contact
                 </h2>
                 <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold text-white">
-                  Let&apos;s talk <span className="text-[#fff]">Business</span>
+                  Let&apos;s talk{" "}
+                  <span className="text-[#d28740]">Business</span>
                 </h3>
               </div>
             </div>
