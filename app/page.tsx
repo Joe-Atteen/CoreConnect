@@ -4,7 +4,6 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBookBible,
   faEarthAmericas,
   faEnvelope,
   faGlobe,
@@ -12,7 +11,6 @@ import {
   faMobileAlt,
   faMoneyBill,
   faPhone,
-  faWebAwesome,
   faWindowMaximize,
 } from "@fortawesome/free-solid-svg-icons";
 import { faComputer } from "@fortawesome/free-solid-svg-icons/faComputer";
