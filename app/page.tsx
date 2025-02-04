@@ -177,86 +177,92 @@ export default function Home() {
         <section id="services" className="bg-[#fdfaf7]">
           <div className="max-w-[1400px] mx-auto px-6 py-28 sm:px-12">
             <h2 className="sub-heading mb-8 tracking-[2px]">Services</h2>
-            <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold mb-20">
+            <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold mb-12">
               Right on time. <span className="text-[#8a39c0]">Everytime.</span>
             </h3>
-            <div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-14">
-                <div className="h-full flex justify-center items-center">
-                  <Image
-                    src="/services.svg"
-                    width={600}
-                    height={0}
-                    alt="Service Image"
-                    className="mb-8 md:mb-0"
+            <h4 className="text-[18px] text-[#404040] font-medium mb-20">
+              At CORECONNECT LTD, we pride ourselves on being a versatile
+              consultancy dedicated to delivering top-tier IT and travel
+              solutions tailored to individuals and businesses in Ghana.
+            </h4>
+            <div className="flex justify-center content-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14">
+                <div className="text-center h-full">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
                   />
+                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                    Software Architecture Consultancy
+                  </h4>
+                  <p className="mb-0">
+                    Providing expert advice for scalable and efficient software
+                    systems.
+                  </p>
                 </div>
-                <div className="md:flex justify-center items-center h-full">
-                  <div>
-                    <h4 className="text-[24px] text-[#404040 text-start font-semibold mb-6 md:mb-8">
-                      We offer the following services:
-                    </h4>
-                    <div className="flex flex-col gap-7">
-                      <div className="flex items-start gap-4">
-                        <Image
-                          src="/bullet.svg"
-                          width={25}
-                          height={0}
-                          alt="Check"
-                          className="flex-shrink-0"
-                        />
-                        <p className="text-[18px] leading-1">Web Development</p>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <Image
-                          src="/bullet.svg"
-                          width={25}
-                          height={0}
-                          alt="Check"
-                          className="flex-shrink-0"
-                        />
-                        <p className="text-[18px] leading-1">
-                          Mobile App Development
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <Image
-                          src="/bullet.svg"
-                          width={25}
-                          height={0}
-                          alt="Check"
-                          className="flex-shrink-0"
-                        />
-                        <p className="text-[18px] leading-1">
-                          USSD Applications
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <Image
-                          src="/bullet.svg"
-                          width={25}
-                          height={0}
-                          alt="Check"
-                          className="flex-shrink-0"
-                        />
-                        <p className="text-[18px] leading-1">
-                          Software Architecture Consultancy
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <Image
-                          src="/bullet.svg"
-                          width={25}
-                          height={0}
-                          alt="Check"
-                          className="flex-shrink-0"
-                        />
-                        <p className="text-[18px] leading-1">
-                          Wide Array of Payment Solutions
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <div className="text-center h-full">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                  />
+                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                    Mobile Applications
+                  </h4>
+                  <p className="mb-0">
+                    Developing user-friendly apps for Android and iOS.
+                  </p>
+                </div>
+                <div className="text-center h-full">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                  />
+                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                    Website Development
+                  </h4>
+                  <p className="mb-0">
+                    Crafting visually appealing and functional websites.
+                  </p>
+                </div>
+                <div className="text-center h-full">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                  />
+                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                    USSD Applications
+                  </h4>
+                  <p className="mb-0">
+                    Creating accessible solutions for enhanced mobile engage
+                  </p>
+                </div>
+                <div className="text-center h-full">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                  />
+                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                    API & Payment Solutions Development
+                  </h4>
+                  <p className="mb-0">
+                    Designing and developing both simple and complex APIs to
+                    facilitate seamless integrations, including a variety of
+                    payment solutions for streamlined transactions.
+                  </p>
+                </div>
+                <div className="text-center h-full">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                  />
+                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                    Comprehensive Travel Services
+                  </h4>
+                  <p className="mb-0">
+                    Providing personalized itinerary planning, efficient flight
+                    booking, visa assistance, and destination management to
+                    ensure a seamless and enjoyable travel experience.
+                  </p>
                 </div>
               </div>
             </div>
