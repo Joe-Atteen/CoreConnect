@@ -42,7 +42,7 @@ export default function Home() {
               <div className="flex-center">
                 <Image
                   src="/hero-img.svg"
-                  width={800}
+                  width={550}
                   height={0}
                   alt="Hero Image"
                 />
@@ -292,7 +292,7 @@ export default function Home() {
                     </p>
                     <a href="tel:0275918290" className="tracking-normal">
                       <p className="sm:text-xl font-bold underline">
-                        0275918290
+                        +233275918290
                       </p>
                     </a>
                   </div>
@@ -316,7 +316,7 @@ export default function Home() {
                       className="tracking-normal"
                     >
                       <p className="sm:text-xl font-bold underline">
-                        0275918290
+                        +233275918290
                       </p>
                     </a>
                   </div>
