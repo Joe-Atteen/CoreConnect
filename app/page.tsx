@@ -15,8 +15,8 @@ export default function Home() {
     <>
       <Navbar />
       <div className="">
-        <section id="/" className="!bg-[#ffffff] hero overflow-hidden relative">
-          <div className="absolute inset-0 bg-[#ffffff] opacity-95 z-0"></div>
+        <section id="/" className="!bg-[#efefef] hero overflow-hidden relative">
+            <div className="absolute inset-0 bg-[#ffffff] opacity-90 z-0"></div>
           <div className="min-h-dvh flex-center px-6 sm:px-14 pt-[130px] xl:pt-[80px] pb-12 xl:pb-8 relative">
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8">
               <div className="flex justify-center items-center">
@@ -42,14 +42,14 @@ export default function Home() {
               <div className="flex-center">
                 <Image
                   src="/hero-img.svg"
-                  width={550}
+                  width={800}
                   height={0}
                   alt="Hero Image"
                 />
               </div>
             </div>
           </div>
-          <div className="bg-[#fdfaf7] relative border-t border-b border-[#e3e3e3]">
+          <div className="bg-[#fdfaf7] relative">
             <div className="max-w-[1400px] mx-auto p-6 sm:p-12">
               <h3 className="text-[24px] md:text-[30px] font-bold mb-10 text-center uppercase">
                 Our partners
@@ -264,57 +264,102 @@ export default function Home() {
         </section>
 
         <section id="contact" className="">
-          <div className="relative mb-[300px]">
-            <div className="relative !bg-[#ffffff] contact-bg overflow-hidden ">
-              <div className="absolute inset-0 bg-[#000000] opacity-65 z-0"></div>
-              <div className="relative max-w-[1400px] mx-auto px-6 py-28 pb-72 sm:pb-80 sm:px-12">
-                <h2 className="sub-heading mb-8 tracking-[2px] !text-white">Contact</h2>
+          <div className="relative mb-[400px] lg:mb-[200px] xl:mb-[170px]">
+            <div className="relative !bg-[#ffffff] contact-bg overflow-hidden">
+              <div className="absolute inset-0 bg-[#252525] opacity-65 z-0"></div>
+              <div className="relative max-w-[1400px] mx-auto px-6 py-28 pb-56 sm:pb-56 sm:px-12">
+                <h2 className="sub-heading mb-8 tracking-[2px] !text-white">
+                  Contact
+                </h2>
                 <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold text-white">
-                  Let&apos;s talk{" "}
-                  <span className="text-[#fff]">Business</span>
+                  Let&apos;s talk <span className="text-[#fff]">Business</span>
                 </h3>
               </div>
             </div>
-            <div className="max-w-[1400px] mx-auto px-6 sm:px-12 absolute top-[250px] sm:top-[300px] left-[50%] transform-gpu -translate-x-1/2 z-10">
-              <div className="h-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
-                  <div className="flex flex-col gap-5 p-4 sm:p-6 md:p-8 lg:p-12 lg:py-16">
-                    <a href="tel:0275918290">
-                      <div className="flex items-center py-5 sm:p-5 gap-3">
-                        <FontAwesomeIcon
-                          icon={faPhone}
-                          className="fa-fw sm:text-xl"
-                        />
-                        <p className="sm:text-xl">0275918290</p>
-                      </div>
+            <div className="flex justify-center">
+              <div className="max-w-[1400px] mx-auto px-6 sm:px-12 absolute top-[290px] sm:top-[320px] grid grid-cols-2 lg:grid-cols-4 gap-5">
+                <div className="h-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
+                  <div className="p-4">
+                    <span className="border border-[#f1f1f1] inline-flex rounded-full p-3 px-[10px] mb-7">
+                      <FontAwesomeIcon
+                        icon={faPhone}
+                        className="fa-fw sm:text-xl"
+                      />
+                    </span>
+                    <p className="font-semibold mb-4 sm:text-xl">Call us</p>
+                    <p className="mb-3 text-[#545454] font-medium">
+                      Mon - Fri from 8am to 5pm
+                    </p>
+                    <a href="tel:0275918290" className="tracking-normal">
+                      <p className="sm:text-xl font-bold underline">
+                        0275918290
+                      </p>
                     </a>
-                    <a href="https://wa.me/233275918290">
-                      <div className="flex items-center py-5 sm:p-5 gap-3">
-                        <FontAwesomeIcon
-                          icon={faWhatsapp}
-                          className="fa-fw sm:text-xl"
-                        />
-                        <p className="sm:text-xl">0275918290</p>
-                      </div>
+                  </div>
+                </div>
+                <div className="h-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
+                  <div className="p-4">
+                    <span className="border border-[#f1f1f1] inline-flex rounded-full p-3 px-[10px] mb-7">
+                      <FontAwesomeIcon
+                        icon={faWhatsapp}
+                        className="fa-fw sm:text-xl"
+                      />
+                    </span>
+                    <p className="font-semibold mb-4 sm:text-xl">
+                      Whatsapp us now
+                    </p>
+                    <p className="mb-3 text-[#545454] font-medium">
+                      Mon - Sun anytime
+                    </p>
+                    <a
+                      href="https://wa.me/233275918290"
+                      className="tracking-normal"
+                    >
+                      <p className="sm:text-xl font-bold underline">
+                        0275918290
+                      </p>
                     </a>
-                    <a href="mailto:coreconnectghana@gmail.com">
-                      <div className="flex items-center py-5 sm:p-5 gap-3">
-                        <FontAwesomeIcon
-                          icon={faEnvelope}
-                          className="fa-fw sm:text-xl"
-                        />
-                        <p className="sm:text-xl">coreconnectghana@gmail.com</p>
-                      </div>
-                    </a>
-                    <div className="flex items-center py-5 sm:p-5 gap-3">
+                  </div>
+                </div>
+                <div className="h-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
+                  <div className="p-4">
+                    <span className="border border-[#f1f1f1] inline-flex rounded-full p-3 px-[10px] mb-7">
                       <FontAwesomeIcon
                         icon={faLocation}
                         className="fa-fw sm:text-xl"
                       />
-                      <p className="sm:text-xl tracking-[2px] font-medium">
-                        McCarthy Hill, 13th Avenue{" "}
-                      </p>
-                    </div>
+                    </span>
+                    <p className="font-semibold mb-4 sm:text-xl">Locate us</p>
+                    <p className="mb-3 text-[#545454] font-medium">
+                      Accra, Ghana
+                    </p>
+                    <p className="sm:text-xl font-bold underline">
+                      McCarthy Hill, 13th Avenue
+                    </p>
                   </div>
+                </div>
+                <div className="h-full border border-[#f1f1f1] rounded-2xl bg-[#fffeff] overflow-hidden">
+                  <div className="p-4">
+                    <span className="border border-[#f1f1f1] inline-flex rounded-full p-3 px-[10px] mb-7">
+                      <FontAwesomeIcon
+                        icon={faEnvelope}
+                        className="fa-fw sm:text-xl"
+                      />
+                    </span>
+                    <p className="font-semibold mb-4 sm:text-xl">Email us</p>
+                    <p className="mb-3 text-[#545454] font-medium">
+                      Mon - Sun anytime
+                    </p>
+                    <a
+                      href="mailto:coreconnectghana@gmail.com"
+                      className="tracking-normal"
+                    >
+                      <p className="sm:text-xl font-bold underline truncate">
+                        coreconnectghana@gmail.com
+                      </p>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
