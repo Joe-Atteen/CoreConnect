@@ -4,11 +4,19 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBookBible,
+  faEarthAmericas,
   faEnvelope,
+  faGlobe,
   faLocation,
+  faMobileAlt,
+  faMoneyBill,
   faPhone,
+  faWebAwesome,
+  faWindowMaximize,
 } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faComputer } from "@fortawesome/free-solid-svg-icons/faComputer";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/faWhatsapp";
 
 export default function Home() {
   return (
@@ -180,19 +188,19 @@ export default function Home() {
             <h3 className="uppercase text-[30px] sm:text-[40px] lg:text-[50px] leading-[35px] sm:leading-[45px] lg:leading-[55px] font-extrabold mb-12">
               Right on time. <span className="text-[#8a39c0]">Everytime.</span>
             </h3>
-            <h4 className="text-[18px] text-[#404040] font-medium mb-20">
-              At CORECONNECT LTD, we pride ourselves on being a versatile
+            <h4 className="text-[18px] text-[#404040] font-medium mb-20 max-w-[800px]">
+              We pride ourselves on being a versatile
               consultancy dedicated to delivering top-tier IT and travel
-              solutions tailored to individuals and businesses in Ghana.
+              solutions tailored to individuals and businesses globally.
             </h4>
-            <div className="flex justify-center content-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14">
+            <div className="">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14 place-items-center">
                 <div className="text-center h-full">
                   <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                    icon={faComputer}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
-                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
                     Software Architecture Consultancy
                   </h4>
                   <p className="mb-0">
@@ -202,10 +210,10 @@ export default function Home() {
                 </div>
                 <div className="text-center h-full">
                   <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                    icon={faMobileAlt}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
-                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
                     Mobile Applications
                   </h4>
                   <p className="mb-0">
@@ -214,10 +222,10 @@ export default function Home() {
                 </div>
                 <div className="text-center h-full">
                   <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                    icon={faGlobe}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
-                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
                     Website Development
                   </h4>
                   <p className="mb-0">
@@ -226,22 +234,22 @@ export default function Home() {
                 </div>
                 <div className="text-center h-full">
                   <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                    icon={faWindowMaximize}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
-                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
                     USSD Applications
                   </h4>
                   <p className="mb-0">
                     Creating accessible solutions for enhanced mobile engage
                   </p>
                 </div>
-                <div className="text-center h-full">
+                <div className="text-center h-full justify-self-center col-span-2">
                   <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                    icon={faMoneyBill}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
-                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
                     API & Payment Solutions Development
                   </h4>
                   <p className="mb-0">
@@ -250,12 +258,12 @@ export default function Home() {
                     payment solutions for streamlined transactions.
                   </p>
                 </div>
-                <div className="text-center h-full">
+                <div className="text-center h-full justify-self-center col-span-2">
                   <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    className="fa-fw text-2xl mb-4 text-[#8a39c0]"
+                    icon={faEarthAmericas}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
-                  <h4 className="text-[20px] text-[#404040 text-center font-semibold mb-4">
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
                     Comprehensive Travel Services
                   </h4>
                   <p className="mb-0">
