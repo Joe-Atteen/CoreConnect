@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCompass,
   faEarthAmericas,
   faEnvelope,
   faGlobe,
@@ -15,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faComputer } from "@fortawesome/free-solid-svg-icons/faComputer";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/faWhatsapp";
+import { faPlane } from "@fortawesome/free-solid-svg-icons/faPlane";
 
 export default function Home() {
   return (
@@ -187,9 +189,9 @@ export default function Home() {
               Right on time. <span className="text-[#8a39c0]">Everytime.</span>
             </h3>
             <h4 className="text-[18px] text-[#404040] font-medium mb-20 max-w-[800px]">
-              We pride ourselves on being a versatile
-              consultancy dedicated to delivering top-tier IT and travel
-              solutions tailored to individuals and businesses globally.
+              We pride ourselves on being a versatile consultancy dedicated to
+              delivering top-tier IT and travel solutions tailored to
+              individuals and businesses globally.
             </h4>
             <div className="">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14 place-items-center">
@@ -242,32 +244,58 @@ export default function Home() {
                     Creating accessible solutions for enhanced mobile engage
                   </p>
                 </div>
-                <div className="text-center h-full justify-self-center col-span-2">
+                <div className="text-center h-full justify-self-center">
                   <FontAwesomeIcon
                     icon={faMoneyBill}
                     className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
                   <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
-                    API & Payment Solutions Development
+                    Payment Solutions
                   </h4>
                   <p className="mb-0">
-                    Designing and developing both simple and complex APIs to
-                    facilitate seamless integrations, including a variety of
-                    payment solutions for streamlined transactions.
+                    Delivering a variety of payment integration options for
+                    streamlined transactions.
                   </p>
                 </div>
-                <div className="text-center h-full justify-self-center col-span-2">
+                <div className="text-center h-full justify-self-center">
+                  <FontAwesomeIcon
+                    icon={faCompass}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
+                  />
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
+                    API Development
+                  </h4>
+                  <p className="mb-0">
+                    Designing both simple and complex APIs to facilitate
+                    seamless integrations.
+                  </p>
+                </div>
+                <div className="text-center h-full justify-self-center">
+                  <FontAwesomeIcon
+                    icon={faPlane}
+                    className="fa-fw text-4xl mb-4 text-[#8a39c0]"
+                  />
+                  <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
+                    Tailored Travel Experiences
+                  </h4>
+                  <p className="mb-0">
+                    Offering personalized itinerary planning and efficient
+                    flight ticketing for both local and international travel,
+                    ensuring a hassle-free booking experience.
+                  </p>
+                </div>
+                <div className="text-center h-full justify-self-center">
                   <FontAwesomeIcon
                     icon={faEarthAmericas}
                     className="fa-fw text-4xl mb-4 text-[#8a39c0]"
                   />
                   <h4 className="text-[20px] text-[#404040] text-center font-semibold mb-4">
-                    Comprehensive Travel Services
+                    Hassle-Free Logistics
                   </h4>
                   <p className="mb-0">
-                    Providing personalized itinerary planning, efficient flight
-                    booking, visa assistance, and destination management to
-                    ensure a seamless and enjoyable travel experience.
+                    Providing expert visa assistance and seamless destination
+                    management to guarantee a smooth and stress-free travel
+                    experience from start to finish.
                   </p>
                 </div>
               </div>
