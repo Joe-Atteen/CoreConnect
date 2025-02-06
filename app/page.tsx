@@ -92,7 +92,24 @@ export default function Home() {
                     src="/azurest.png"
                     width={150}
                     height={60}
-                    alt="Commitment"
+                    alt="Azurest"
+                  />
+                </div>
+                <div className="flex justify-center items-center">
+                  <Image
+                    src="/hubtel.png"
+                    width={150}
+                    height={60}
+                    alt="Hubtel"
+                  />
+                </div>
+                <div className="flex justify-center items-center">
+                  <Image
+                    src="/troasel.png"
+                    width={150}
+                    height={60}
+                    alt="Troasel"
+                    className="invert"
                   />
                 </div>
               </div>
@@ -123,7 +140,7 @@ export default function Home() {
               stress-free and enjoyable journeys.
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 pt-[97px] py-16 rounded-2xl bg-[#f3e8ee] h-full">
+              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] px-7 p-12 md:px-12 pt-[97px] py-16 rounded-2xl bg-[#f3e8ee] h-full">
                 <Image
                   src="/innovation.svg"
                   width={110}
@@ -140,7 +157,7 @@ export default function Home() {
                   experiences.
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 py-16 rounded-2xl bg-[#fbf7ff] h-full">
+              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] px-7 p-12 md:px-12 py-16 rounded-2xl bg-[#fbf7ff] h-full">
                 <Image
                   src="/quality.svg"
                   width={65}
@@ -156,7 +173,7 @@ export default function Home() {
                   commitment to continuous improvement.
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] p-12 pt-[97px] pb-16 rounded-2xl bg-[#fff7f1] h-full">
+              <div className="flex flex-col justify-center items-center border border-[#f7f7f7] px-7 p-12 md:px-12 pt-[97px] pb-16 rounded-2xl bg-[#fff7f1] h-full">
                 <Image
                   src="/satisfaction.svg"
                   width={125}
