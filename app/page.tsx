@@ -139,7 +139,12 @@ export default function Home() {
                   <Image src="/UBA-logo.png" width={50} height={50} alt="UBA" />
                 </div>
                 <div className="flex justify-center items-center transition-all duration-300">
-                  <Image src="/corpstreet-logo.svg" width={150} height={50} alt="Corpstreet" />
+                  <Image
+                    src="/corpstreet-logo.svg"
+                    width={150}
+                    height={50}
+                    alt="Corpstreet"
+                  />
                 </div>
               </div>
             </div>
