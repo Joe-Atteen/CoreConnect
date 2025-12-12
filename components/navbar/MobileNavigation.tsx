@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,45 +7,73 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  //   SheetDescription,
-  //   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-const MobileNavigation = () => {
+interface MobileNavigationProps {
+  isHeroSection?: boolean;
+}
+
+const MobileNavigation = ({ isHeroSection = false }: MobileNavigationProps) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Image
-          src="/hamburger.svg"
-          width={36}
-          height={36}
-          alt="Menu"
-          className="invert-colors md:hidden"
-        />
+        <button className="p-2 rounded-lg hover:bg-white/10 transition-colors">
+          <Image
+            src="/hamburger.svg"
+            width={28}
+            height={28}
+            alt="Menu"
+            className={`md:hidden transition-all duration-300 ${
+              isHeroSection ? "brightness-0 invert" : ""
+            }`}
+          />
+        </button>
       </SheetTrigger>
-      <SheetContent
-        side="left"
-        className="background-light900_dark200 border-none"
-      >
-        <SheetTitle className="hidden">Navigation</SheetTitle>
-        <Link href="/" className="flex items-center gap-1">
-          <Image src="/logo.png" width={150} height={0} alt="Logo" />
-        </Link>
+      <SheetContent side="right" className="bg-white border-none w-[300px] p-0">
+        <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+        <div className="p-6 border-b border-[#f0f0f0]">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              width={130}
+              height={40}
+              alt="CoreConnect Logo"
+            />
+          </Link>
+        </div>
 
-        <div className="no-scrollbar flex h-[calc(100vh-80px)] flex-col justify-between gap-10 overflow-y-auto">
-          <section className="flex h-full flex-col gap-8 pt-16 uppercase">
+        <div className="flex flex-col p-6">
+          <nav className="flex flex-col gap-2">
             <SheetClose asChild>
-              <Link href="#about">About</Link>
+              <Link
+                href="#about"
+                className="px-4 py-3 text-[#545454] font-medium hover:text-[#1a1a1a] hover:bg-[#f5f5f5] rounded-xl transition-colors"
+              >
+                About
+              </Link>
             </SheetClose>
             <SheetClose asChild>
-              <Link href="#services">Services</Link>
+              <Link
+                href="#services"
+                className="px-4 py-3 text-[#545454] font-medium hover:text-[#1a1a1a] hover:bg-[#f5f5f5] rounded-xl transition-colors"
+              >
+                Services
+              </Link>
             </SheetClose>
+          </nav>
+
+          <div className="mt-8 pt-6 border-t border-[#f0f0f0]">
             <SheetClose asChild>
-              <Link href="#contact">Contact</Link>
+              <Link
+                href="#contact"
+                className="block w-full text-center bg-[#1a1a1a] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#333] transition-colors"
+              >
+                Get in touch
+              </Link>
             </SheetClose>
-          </section>
+          </div>
         </div>
       </SheetContent>
     </Sheet>

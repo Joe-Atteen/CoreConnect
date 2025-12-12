@@ -175,6 +175,18 @@ body {
     @apply text-[14px] font-normal leading-[19.6px];
   }
 
+  .marquee-track {
+    animation: marquee 22s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
   .body-medium {
     @apply text-[14px] font-medium leading-[18.2px];
   }
@@ -216,7 +228,7 @@ body {
   }
 
   .primary-gradient {
-    background: linear-gradient(129deg, #eb0f53 0%, #d28740 50%, #9251f5 100%);
+    background: linear-gradient(129deg, #eb0f53 0%, #d28740 50%, #8a39c0 100%);
   }
 
   .dark-gradient {
@@ -236,7 +248,7 @@ body {
   }
 
   .primary-text-gradient {
-    background: linear-gradient(129deg, #eb0f53 0%, #d28740 50%, #9251f5 100%);
+    background: linear-gradient(129deg, #eb0f53 0%, #d28740 50%, #8a39c0 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -298,37 +310,6 @@ body {
     );
   }
 }
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
-  border-radius: 2px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 50px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 .active-theme {
   filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
     brightness(104%) contrast(106%) !important;
@@ -400,15 +381,10 @@ body {
 }
 
 a {
-  letter-spacing: 2px;
   font-weight: 500;
 }
 
 .active {
-  color: #eb0f53;
-}
-
-a:hover {
   color: #eb0f53;
 }
 
@@ -424,4 +400,100 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Custom Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Staggered animation delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Smooth hover transitions */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(235, 15, 83, 0.2);
+  color: #1a1a1a;
 }
