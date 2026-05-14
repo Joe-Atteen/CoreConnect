@@ -8,6 +8,7 @@ import MobileNavigation from "./MobileNavigation";
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const [scrolled, setScrolled] = useState(false);
+  const [announcementHeight, setAnnouncementHeight] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,10 +34,28 @@ const Navbar = () => {
     };
   }, []);
 
+  // Track announcement bar height via CSS custom property
+  useEffect(() => {
+    const update = () => {
+      const val = getComputedStyle(document.documentElement)
+        .getPropertyValue("--announcement-height")
+        .trim();
+      setAnnouncementHeight(val ? parseInt(val, 10) || 0 : 0);
+    };
+    update();
+    const observer = new MutationObserver(update);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["style"],
+    });
+    return () => observer.disconnect();
+  }, []);
+
   const isHeroSection = activeSection === "/" || activeSection === "";
 
   return (
     <nav
+      style={{ top: announcementHeight }}
       className={`fixed z-50 w-full transition-all duration-300 ${
         scrolled
           ? "bg-white/95 backdrop-blur-md shadow-sm py-3"

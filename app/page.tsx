@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/navbar";
+import AnnouncementBar from "@/components/AnnouncementBar";
 import EventModal from "@/components/EventModal";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <EventModal />
+      <AnnouncementBar />
       <Navbar />
       <div className="overflow-x-hidden">
         {/* Hero Section */}
