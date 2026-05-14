@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/navbar";
+import EventModal from "@/components/EventModal";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,6 +15,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/faWhatsapp";
 export default function Home() {
   return (
     <>
+      <EventModal />
       <Navbar />
       <div className="overflow-x-hidden">
         {/* Hero Section */}
